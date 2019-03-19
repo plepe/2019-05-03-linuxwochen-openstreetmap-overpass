@@ -140,6 +140,48 @@ way[highway]; out; >; out;
 
 ---
 
+## Overpass API & QGIS
+
+* Copy data from Overpass Turbo
+* QuickOSM: https://github.com/3liz/QuickOSM
+
+---
+
+## Exportiere Daten kompatibel mit anderen Tools
+
+Mit der folgenden Abfrage sind die Daten mit anderen OSM-Tools (z.B. JOSM, Osmosis) kompatibel.
+
+```c
+[out:xml][bbox:{{bbox}}];
+
+way[highway]; // Or any other query
+
+out meta;
+>;
+out meta;
+```
+
+---
+
+## Abfragen mit CURL direkt in eine Datei schreiben
+
+```sh
+curl \
+  -X POST \
+  -d "[out:json];node[place=continent];out;" \
+  https://overpass-api.de/api/interpreter \
+  > export.json
+```
+
+---
+
+## Webseiten mit eingebetteter Karte und Overpass Overlay
+* https://github.com/GuillaumeAmat/leaflet-overpass-layer
+* https://github.com/plepe/overpass-layer
+
+
+---
+
 ## Happy mapping!
 
 Questions?
