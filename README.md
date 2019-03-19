@@ -9,7 +9,7 @@ Stephan Bösch-Plepelits - skunk@openstreetmap.at - plepe.at
 
 Social media:
 - Twitter: twitter.com/plepe
-- Mastodon: https://en.osm.town/@plepe
+- Mastodon: @plepe@en.osm.town
 - Jabber: skunk@jabber.at
 
 ---
