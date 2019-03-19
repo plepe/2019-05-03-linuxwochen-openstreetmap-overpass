@@ -2,7 +2,6 @@
 # Overpass API
 ## Die Schnittstelle zur OpenStreetMap
 
-
 Für das "Vienna Geo Meetup" am 20.3.2019
 
 Stephan Bösch-Plepelits - skunk@openstreetmap.at - plepe.at
@@ -20,9 +19,14 @@ Eine effiziente Datenbank um Daten aus der OpenStreetMap auszulesen.
 
 -> https://wiki.openstreetmap.org/wiki/Overpass_API
 
+* Abfragesprache: Overpass QL
+* Open Source
+* Public Server: z.B. overpass-api.de
+* Output: JSON, XML, CSV
+
 ---
 
-##  Overpass Query (gekürzt)
+##  Beispiel für eine Overpass Query
 ```
 [out:json][bbox:48.21,16.37,48.22,16.38];
 node[amenity=cafe];
@@ -50,11 +54,10 @@ out body geom;
 ---
 
 ## Overpass Turbo
-Ein Frontend für Overpass API, zu finden auf
-https://overpass-turbo.eu
+Frontend für Overpass API: https://overpass-turbo.eu
 
-
-![](overpass-turbo-map.png)
+![Screenshot Overpass Turbo](overpass-turbo-map.png)
+*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
 
 ---
 
@@ -137,13 +140,17 @@ Members:
 ```c
 way[highway]; out; >; out;
 ```
+Sets:
+```c
+node[amenity=cafe]->.a; node.a[cuisine]; .a out;
+```
 
 ---
 
 ## Overpass API & QGIS
 
 * Copy data from Overpass Turbo
-* QuickOSM: https://github.com/3liz/QuickOSM
+* Plugin QuickOSM: https://github.com/3liz/QuickOSM
 
 ---
 
@@ -175,13 +182,26 @@ curl \
 
 ---
 
-## Webseiten mit eingebetteter Karte und Overpass Overlay
-* https://github.com/GuillaumeAmat/leaflet-overpass-layer
-* https://github.com/plepe/overpass-layer
+## Webseiten mit eingebetteter Karte und Overpass Overlay erstellen
 
+LeafletJS + verschiedene 
+
+* https://github.com/plepe/overpass-layer
+* https://github.com/GuillaumeAmat/leaflet-overpass-layer
+
+---
+
+## Werbeeinschaltung: OpenStreetBrowser
+
+* https://www.openstreetbrowser.org
+
+![Screenshot OpenStreetBrowser](openstreetbrowser.png)
+*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
 
 ---
 
 ## Happy mapping!
 
-Questions?
+Danke für Eure Aufmerksamkeit!
+
+Fragen?
