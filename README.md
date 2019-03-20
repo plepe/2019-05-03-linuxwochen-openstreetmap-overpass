@@ -12,6 +12,7 @@ Social media:
 - Jabber: skunk@jabber.at
 
 ---
+
 <!-- page_number: true -->
 
 ## Was ist die Overpass API?
@@ -20,14 +21,23 @@ Eine effiziente Datenbank um Daten aus der OpenStreetMap auszulesen.
 -> https://wiki.openstreetmap.org/wiki/Overpass_API
 
 * Abfragesprache: Overpass QL
-* Open Source
+* Free Software (GNU AGPL 3.0)
 * Public Server: z.B. overpass-api.de
 * Output: JSON, XML, CSV
 
 ---
 
+## Werbeeinschaltung: OpenStreetBrowser
+
+* https://www.openstreetbrowser.org
+
+![Screenshot OpenStreetBrowser](openstreetbrowser.png)
+*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
+
+---
+
 ##  Beispiel für eine Overpass Query
-```
+```c
 [out:json][bbox:48.21,16.37,48.22,16.38];
 node[amenity=cafe];
 out body geom;
@@ -98,7 +108,8 @@ Im folgenden werden nur die wichtigsten Konstrukte erklärt, eine vollständige 
 ## Overpass QL (3/5) - Selektierung
 Typ:
 ```c
-node, way, relation, nwr, area
+node; way; relation;
+nwr /* alles */, area /* flächen um punkt */
 ```
 Selektiere Tags:
 ```c
@@ -106,12 +117,10 @@ nwr[amenity=cafe]; // Tag hat Wert
 nwr[amenity]; // Tag hat irgendeinen Wert
 nwr[amenity~"^(bar|cafe)$"]; // Regular Expression
 nwr[~"name"~"straße$"]; // Regular Expression
+node(id:1234,1235); // Nach ID
 ```
-Selektiere nach ID:
-```c
-node(1234);
-node(id:1234,1235);
-```
+
+Bedeutung der Tags: https://wiki.openstreetmap.org/wiki/DE:Map_Features
 
 ---
 
@@ -188,15 +197,6 @@ LeafletJS + verschiedene
 
 * https://github.com/plepe/overpass-layer
 * https://github.com/GuillaumeAmat/leaflet-overpass-layer
-
----
-
-## Werbeeinschaltung: OpenStreetBrowser
-
-* https://www.openstreetbrowser.org
-
-![Screenshot OpenStreetBrowser](openstreetbrowser.png)
-*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
 
 ---
 
