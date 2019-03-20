@@ -17,6 +17,11 @@ Social media:
 <!-- page_number: true -->
 
 ## Was ist die Overpass API?
+<div style='float: right'>
+
+![](400px-Overpass_API_logo.svg.png)
+
+</div>
 Eine effiziente Datenbank um Daten aus der OpenStreetMap auszulesen.
 
 -> https://wiki.openstreetmap.org/wiki/Overpass_API
