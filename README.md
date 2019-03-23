@@ -1,4 +1,3 @@
-<!-- $size: 16:9 -->
 <!-- footer: CC-BY-SA 4.0 https://github.com/plepe/2019-03-20-presentation-overpass -->
 # Overpass API
 ## Die Schnittstelle zur OpenStreetMap
