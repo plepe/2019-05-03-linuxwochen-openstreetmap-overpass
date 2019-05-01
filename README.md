@@ -1,8 +1,8 @@
 <!-- footer: CC-BY-SA 4.0 https://github.com/plepe/2019-03-20-presentation-overpass -->
-# Overpass API
-## Die Schnittstelle zur OpenStreetMap
+# Overpass API - die Datenbank zur OpenStreetMap
+## Mit der Overpass API die Datenvielfalt aus der OpenStreetMap kitzeln
 
-Für das "Vienna Geo Meetup" am 20.3.2019
+Linuxwochen Wien, 3. Mai 2019 - plepe.at/xxx
 
 Stephan Bösch-Plepelits - skunk@openstreetmap.at - plepe.at
 
@@ -10,6 +10,34 @@ Social media:
 - Twitter: twitter.com/plepe
 - Mastodon: @plepe@en.osm.town
 - Jabber: skunk@jabber.at
+
+---
+
+## Struktur
+- OpenStreetMap
+- Overpass API
+- Anwendungsbeispiele
+
+---
+
+## OpenStreetMap - was ist das?
+- Eine von der Community erstellte Karte der Welt - (c) OpenStreetMap-Mitwirkende
+- Open Data: ODbL (Rohdaten) bzw. CC-BY-SA 2.0 (Kacheln)
+- Schirmherrschaft: OpenStreetMap Foundation
+
+---
+
+## OpenStreetMap - wie funktioniert sie?
+3 verschiedene Objekttypen:
+- Node: Lat/Lon Koordinaten; Tags
+- Way: Liste von Nodes; Tags
+- Relation: Liste von Nodes, Ways und Relationen (mit Rolle); Tags
+
+Tags sind Liste von Key/Value Paaren, z.b.:
+- amenity=restaurant, cuisine=kebap;pizza, name=Kebaphaus
+- highway=primary, name=Dresdner Straße, maxspeed=50
+
+https://wiki.openstreetmap.org/wiki/Map_Features
 
 ---
 
