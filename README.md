@@ -12,6 +12,7 @@ Social media:
 - Jabber: skunk@jabber.at
 
 ---
+<!-- page_number: true -->
 
 ## Struktur
 - OpenStreetMap
@@ -21,13 +22,13 @@ Social media:
 ---
 
 ## OpenStreetMap - was ist das?
-- Eine von der Community erstellte Karte der Welt - (c) OpenStreetMap-Mitwirkende
+- Eine von der Community erstellte Karte der Welt<br>(c) OpenStreetMap-Mitwirkende
 - Open Data: ODbL (Rohdaten) bzw. CC-BY-SA 2.0 (Kacheln)
 - Schirmherrschaft: OpenStreetMap Foundation
 
 ---
 
-## OpenStreetMap - wie funktioniert sie?
+## OpenStreetMap - wie funktioniert das?
 3 verschiedene Objekttypen:
 - Node: Lat/Lon Koordinaten; Tags
 - Way: Liste von Nodes; Tags
@@ -40,8 +41,6 @@ Tags sind Liste von Key/Value Paaren, z.b.:
 https://wiki.openstreetmap.org/wiki/Map_Features
 
 ---
-
-<!-- page_number: true -->
 
 ## Was ist die Overpass API?
 <div style='float: right'>
@@ -57,15 +56,6 @@ Eine effiziente Datenbank um Daten aus der OpenStreetMap auszulesen.
 * Free Software (GNU AGPL 3.0)
 * Public Server: z.B. overpass-api.de
 * Output: JSON, XML, CSV
-
----
-
-## Werbeeinschaltung: OpenStreetBrowser
-
-* https://www.openstreetbrowser.org
-
-![Screenshot OpenStreetBrowser](openstreetbrowser.png)
-*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
 
 ---
 
@@ -191,8 +181,9 @@ node[amenity=cafe]->.a; node.a[cuisine]; .a out;
 
 ## Overpass API & QGIS
 
-* Copy data from Overpass Turbo
 * Plugin QuickOSM: https://github.com/3liz/QuickOSM
+
+
 
 ---
 
@@ -230,6 +221,22 @@ LeafletJS + verschiedene
 
 * https://github.com/plepe/overpass-layer
 * https://github.com/GuillaumeAmat/leaflet-overpass-layer
+
+---
+
+## OpenStreetBrowser
+
+* https://www.openstreetbrowser.org
+
+![Screenshot OpenStreetBrowser](openstreetbrowser.png)
+*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
+
+---
+
+## VRMAP
+
+- https://vrmap.kairo.at - https://vrmap.plepe.at
+
 
 ---
 
