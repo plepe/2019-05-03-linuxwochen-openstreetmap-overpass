@@ -229,15 +229,24 @@ LeafletJS + verschiedene
 
 * https://www.openstreetbrowser.org
 
-![Screenshot OpenStreetBrowser](openstreetbrowser.png)
-*© OpenStreetMap-Mitwirkende, https://osm.org/copyright*
+![Screenshot OpenStreetBrowser](OpenStreetBrowser.png)
 
 ---
 
-## VRMAP
+## VR Map
 
 - https://vrmap.kairo.at - https://vrmap.plepe.at
 
+![Screenshot VR Map](VRMap.png)
+
+
+---
+
+## OpenLevelUp!
+
+- https://openlevelup.net/
+
+![Screenshot OpenLevelUp](OpenLevelUp.png)
 
 ---
 
@@ -246,3 +255,9 @@ LeafletJS + verschiedene
 Danke für Eure Aufmerksamkeit!
 
 Fragen?
+
+<hr>
+
+### References
+* Abbildungen © OpenStreetMap-Mitwirkende
+* Marp (Markdown presentation editor)
