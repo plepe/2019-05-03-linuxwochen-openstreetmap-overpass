@@ -22,6 +22,7 @@ Social media:
 ---
 
 ## OpenStreetMap - was ist das?
+- https://www.openstreetmap.org/
 - Eine von der Community erstellte Karte der Welt<br>(c) OpenStreetMap-Mitwirkende
 - Open Data: ODbL (Rohdaten) bzw. CC-BY-SA 2.0 (Kacheln)
 - Schirmherrschaft: OpenStreetMap Foundation
@@ -30,13 +31,13 @@ Social media:
 
 ## OpenStreetMap - wie funktioniert das?
 3 verschiedene Objekttypen:
-- Node: Lat/Lon Koordinaten; Tags
-- Way: Liste von Nodes; Tags
-- Relation: Liste von Nodes, Ways und Relationen (mit Rolle); Tags
+- Node: ID; Tags; Lat/Lon Koordinaten
+- Way: ID; Tags; Liste von Nodes
+- Relation: ID; Tags; Liste von Nodes, Ways und Relationen (mit Rolle)
 
 Tags sind Liste von Key/Value Paaren, z.b.:
 - amenity=restaurant, cuisine=kebap;pizza, name=Kebaphaus
-- highway=primary, name=Dresdner Straße, maxspeed=50
+- highway=primary, name=Dresdner Straße, maxspeed=50, oneway=yes
 
 https://wiki.openstreetmap.org/wiki/Map_Features
 
