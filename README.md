@@ -200,7 +200,7 @@ out;
 
 * Plugin QuickOSM: https://github.com/3liz/QuickOSM
 
-
+![Screenshot QGIS, QuickOSM](QGisQuickOSM.png)
 
 ---
 
