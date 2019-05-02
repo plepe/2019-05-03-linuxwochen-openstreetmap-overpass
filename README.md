@@ -104,7 +104,7 @@ Frontend für Overpass API: https://overpass-turbo.eu
 
 ---
 
-## Overpass QL (1/5)
+## Overpass QL (1/6)
 
 Overpass Query Language. Jede Query besteht aus mehreren Teilen:
 
@@ -118,18 +118,18 @@ Im folgenden werden nur die wichtigsten Konstrukte erklärt, eine vollständige 
 
 ---
 
-## Overpass QL (2/5) - Einstellungen
+## Overpass QL (2/6) - Einstellungen
 
 ```c
 [out:json] vs. [out:xml] vs. [out:csv] // Format
 [bbox:48.2,16.2,48.4,16.4] // Region (default: Welt)
 [date:"2018-12-24T19:00:00Z"] // Historische Daten
-[diff:] and [adiff:] // Vergleich (verwende: [out:xml])
+[diff:] and [adiff:] // Änderungen (verwende: [out:xml])
 ```
 
 ---
 
-## Overpass QL (3/5) - Selektierung
+## Overpass QL (3/6) - Selektierung
 Typ:
 ```c
 node; way; relation;
@@ -148,7 +148,7 @@ Bedeutung der Tags: https://wiki.openstreetmap.org/wiki/DE:Map_Features
 
 ---
 
-## Overpass QL (4/5) - Ausgabe
+## Overpass QL (4/6) - Ausgabe
 ```c
 out;
 ```
@@ -163,7 +163,7 @@ Geo-Informationen:
 
 ---
 
-## Overpass QL (5/5) - Weitere Konstrukte
+## Overpass QL (5/6) - Weitere Konstrukte
 
 Union:
 ```c
@@ -176,6 +176,22 @@ way[highway]; out; >; out;
 Sets:
 ```c
 node[amenity=cafe]->.a; node.a[cuisine]; .a out;
+```
+
+---
+
+## Overpass QL (6/6) - komplexes Beispiel
+
+Alle Kinos die nicht mehr als 100m von einer Bus- oder Bimstation in Wien entfernt sind.
+
+```c
+area[name="Wien"];
+(
+  node(area)[highway=bus_stop];
+  node(area)[railway=tram_stop];
+);
+nwr(around:100)[amenity=cinema];
+out;
 ```
 
 ---
